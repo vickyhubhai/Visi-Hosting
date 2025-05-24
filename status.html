@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status - VisiHost</title>
+    <meta name="description" content="Check the current status of VisiHost services. Real-time monitoring of our Discord bot hosting infrastructure and uptime.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">VisiHost</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="guide.html" class="nav-link">Guide</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Status Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">
+                    Service <span class="gradient-text">Status</span>
+                </h1>
+                <p class="page-description">
+                    Real-time monitoring of VisiHost services and infrastructure status.
+                </p>
+                <div class="overall-status">
+                    <div class="status-indicator operational">
+                        <span class="status-dot"></span>
+                        <span class="status-text">All Systems Operational</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Status -->
+    <section class="current-status">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Current <span class="gradient-text">Status</span></h2>
+                <p class="section-description">
+                    Live status of all VisiHost services and components.
+                </p>
+            </div>
+
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">Bot Hosting Platform</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">Core bot hosting and management services</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.98%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">45ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">Web Dashboard</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">User dashboard and control panel</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.95%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">120ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">File Upload System</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">Bot file upload and deployment system</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.92%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">89ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">Database Services</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">Database hosting and management</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.99%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">12ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">Support System</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">Customer support and ticketing system</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.97%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">67ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-card-header">
+                        <h3 class="status-service-name">Payment Processing</h3>
+                        <div class="status-badge operational">
+                            <i class="fas fa-check-circle"></i>
+                            Operational
+                        </div>
+                    </div>
+                    <p class="status-description">Billing and payment processing services</p>
+                    <div class="status-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Uptime</span>
+                            <span class="metric-value">99.94%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Response Time</span>
+                            <span class="metric-value">156ms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uptime Statistics -->
+    <section class="uptime-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Uptime <span class="gradient-text">Statistics</span></h2>
+                <p class="section-description">
+                    Historical uptime data for the past 90 days.
+                </p>
+            </div>
+
+            <div class="uptime-chart">
+                <div class="chart-header">
+                    <h3 class="chart-title">Overall System Uptime</h3>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color operational"></span>
+                            <span class="legend-label">Operational</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color degraded"></span>
+                            <span class="legend-label">Degraded</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color outage"></span>
+                            <span class="legend-label">Outage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-grid">
+                    <!-- Simulated uptime bars for the last 90 days -->
+                    <div class="uptime-bars">
+                        <!-- These would be dynamically generated in a real implementation -->
+                        <div class="uptime-bar operational" title="Day 1: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 2: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 3: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 4: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 5: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 6: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 7: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 8: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 9: 100% uptime"></div>
+                        <div class="uptime-bar operational" title="Day 10: 100% uptime"></div>
+                        <!-- Add more bars as needed -->
+                    </div>
+                </div>
+                <div class="chart-summary">
+                    <div class="summary-stat">
+                        <span class="stat-value">99.98%</span>
+                        <span class="stat-label">90-day uptime</span>
+                    </div>
+                    <div class="summary-stat">
+                        <span class="stat-value">99.95%</span>
+                        <span class="stat-label">30-day uptime</span>
+                    </div>
+                    <div class="summary-stat">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">7-day uptime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Incidents -->
+    <section class="recent-incidents">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent <span class="gradient-text">Incidents</span></h2>
+                <p class="section-description">
+                    Latest service incidents and maintenance updates.
+                </p>
+            </div>
+
+            <div class="incidents-timeline">
+                <div class="incident-item resolved">
+                    <div class="incident-status">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Resolved</span>
+                    </div>
+                    <div class="incident-content">
+                        <h3 class="incident-title">Scheduled Maintenance - Database Optimization</h3>
+                        <p class="incident-description">
+                            Performed routine database optimization to improve performance. All services remained operational during maintenance.
+                        </p>
+                        <div class="incident-meta">
+                            <span class="incident-date">December 15, 2024</span>
+                            <span class="incident-duration">Duration: 30 minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="incident-item resolved">
+                    <div class="incident-status">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Resolved</span>
+                    </div>
+                    <div class="incident-content">
+                        <h3 class="incident-title">Brief File Upload Slowdown</h3>
+                        <p class="incident-description">
+                            Some users experienced slower than normal file upload speeds. Issue was resolved by scaling up our upload infrastructure.
+                        </p>
+                        <div class="incident-meta">
+                            <span class="incident-date">December 10, 2024</span>
+                            <span class="incident-duration">Duration: 15 minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-incidents">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>No Major Incidents</h3>
+                    <p>We're proud to maintain excellent service reliability with minimal disruptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe to Updates -->
+    <section class="status-subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 class="subscribe-title">Stay Updated</h2>
+                <p class="subscribe-description">
+                    Get notified about service updates and maintenance schedules.
+                </p>
+                <div class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="Enter your email address">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-bell"></i>
+                        Subscribe
+                    </button>
+                </div>
+                <div class="subscribe-alternative">
+                    <p>Or join our Discord for real-time updates:</p>
+                    <a href="https://discord.gg/Vd48FAZCGV" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VisiHost</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium Discord bot hosting with unmatched performance and reliability.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="status.html">Status</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VisiHost. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/Vd48FAZCGV" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

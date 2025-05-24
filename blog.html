@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - VisiHost</title>
+    <meta name="description" content="Stay updated with the latest news, tutorials, and insights about Discord bot development and hosting from the VisiHost team.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">VisiHost</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="guide.html" class="nav-link">Guide</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">
+                    VisiHost <span class="gradient-text">Blog</span>
+                </h1>
+                <p class="page-description">
+                    Insights, tutorials, and updates from the world of Discord bot development and hosting.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <article class="featured-article">
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span class="featured-category">Tutorial</span>
+                        <span class="featured-date">December 20, 2024</span>
+                    </div>
+                    <h2 class="featured-title">Building Your First Discord Music Bot: A Complete Guide</h2>
+                    <p class="featured-excerpt">
+                        Learn how to create a fully-featured Discord music bot from scratch using Node.js and discord.js. 
+                        This comprehensive tutorial covers everything from basic setup to advanced features like playlists and queue management.
+                    </p>
+                    <div class="featured-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Mike Rodriguez</span>
+                            <span class="author-role">Lead Developer</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i>
+                        Read Full Article
+                    </a>
+                </div>
+                <div class="featured-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="news">News</button>
+                <button class="category-btn" data-category="tips">Tips & Tricks</button>
+                <button class="category-btn" data-category="updates">Updates</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="posts-grid">
+                <article class="post-card" data-category="tutorials">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tutorial</span>
+                            <span class="post-date">December 18, 2024</span>
+                        </div>
+                        <h3 class="post-title">Advanced Discord.js Slash Commands</h3>
+                        <p class="post-excerpt">
+                            Master the art of creating interactive slash commands with options, choices, and autocomplete functionality.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Sarah Johnson</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="news">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">News</span>
+                            <span class="post-date">December 15, 2024</span>
+                        </div>
+                        <h3 class="post-title">VisiHost Reaches 5,000 Developers Milestone</h3>
+                        <p class="post-excerpt">
+                            We're thrilled to announce that VisiHost now serves over 5,000 Discord bot developers worldwide.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Alex Chen</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tips</span>
+                            <span class="post-date">December 12, 2024</span>
+                        </div>
+                        <h3 class="post-title">10 Performance Tips for Discord Bots</h3>
+                        <p class="post-excerpt">
+                            Optimize your Discord bot's performance with these proven techniques and best practices.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Emily Davis</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tutorials">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tutorial</span>
+                            <span class="post-date">December 10, 2024</span>
+                        </div>
+                        <h3 class="post-title">Setting Up MongoDB for Your Discord Bot</h3>
+                        <p class="post-excerpt">
+                            Learn how to integrate MongoDB with your Discord bot for persistent data storage and user management.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Mike Rodriguez</span>
+                            <span class="read-time">12 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="updates">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Updates</span>
+                            <span class="post-date">December 8, 2024</span>
+                        </div>
+                        <h3 class="post-title">New Dashboard Features Released</h3>
+                        <p class="post-excerpt">
+                            Discover the latest improvements to the VisiHost dashboard including real-time monitoring and enhanced logs.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Sarah Johnson</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="tips">
+                    <div class="post-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Tips</span>
+                            <span class="post-date">December 5, 2024</span>
+                        </div>
+                        <h3 class="post-title">Discord Bot Security Best Practices</h3>
+                        <p class="post-excerpt">
+                            Essential security measures every Discord bot developer should implement to protect their bots and users.
+                        </p>
+                        <div class="post-author">
+                            <span class="author-name">Alex Chen</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn btn-outline">
+                    <i class="fas fa-plus"></i>
+                    Load More Posts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-description">
+                    Get the latest tutorials, tips, and updates delivered straight to your inbox.
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Subscribe
+                    </button>
+                </form>
+                <p class="newsletter-note">
+                    No spam, unsubscribe at any time. We respect your privacy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VisiHost</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium Discord bot hosting with unmatched performance and reliability.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="status.html">Status</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VisiHost. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const postCards = document.querySelectorAll('.post-card');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Filter posts
+                    postCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

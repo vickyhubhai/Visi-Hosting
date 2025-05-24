@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started Guide - VisiHost</title>
+    <meta name="description" content="Learn how to deploy your Discord bot on VisiHost with our comprehensive getting started guide. Step-by-step instructions for beginners.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">VisiHost</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="guide.html" class="nav-link active">Guide</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Guide Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">
+                    Getting Started <span class="gradient-text">Guide</span>
+                </h1>
+                <p class="page-description">
+                    Learn how to deploy your Discord bot on VisiHost in just a few simple steps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Content -->
+    <section class="guide-section">
+        <div class="container">
+            <div class="guide-layout">
+                <!-- Guide Steps -->
+                <div class="guide-main">
+                    <!-- Step 1 -->
+                    <div class="guide-step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h2 class="step-title">Create Your Discord Bot</h2>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                Before hosting your bot, you need to create it on Discord's Developer Portal.
+                            </p>
+                            <div class="step-instructions">
+                                <ol class="instruction-list">
+                                    <li>Go to <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a></li>
+                                    <li>Click "New Application" and give your bot a name</li>
+                                    <li>Navigate to the "Bot" section in the sidebar</li>
+                                    <li>Click "Add Bot" to create your bot user</li>
+                                    <li>Copy the bot token (keep this secret!)</li>
+                                </ol>
+                            </div>
+                            <div class="step-note">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Never share your bot token publicly. It's like a password for your bot!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="guide-step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h2 class="step-title">Prepare Your Bot Code</h2>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                Make sure your bot code is ready for deployment with proper structure.
+                            </p>
+                            <div class="code-example">
+                                <div class="code-header">
+                                    <span class="code-title">Example Bot Structure</span>
+                                </div>
+                                <pre><code>my-discord-bot/
+├── index.js          # Main bot file
+├── package.json      # Dependencies
+├── commands/         # Bot commands
+├── events/          # Event handlers
+└── config.json      # Configuration (optional)</code></pre>
+                            </div>
+                            <div class="step-instructions">
+                                <ul class="instruction-list">
+                                    <li>Ensure your main file is named <code>index.js</code> or specify it in package.json</li>
+                                    <li>Include all dependencies in package.json</li>
+                                    <li>Use environment variables for sensitive data like tokens</li>
+                                    <li>Test your bot locally before deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="guide-step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h2 class="step-title">Choose Your Plan</h2>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                Select the hosting plan that best fits your bot's needs.
+                            </p>
+                            <div class="plan-comparison">
+                                <div class="plan-card">
+                                    <h3 class="plan-name">Standard</h3>
+                                    <div class="plan-price">$0.23/month</div>
+                                    <ul class="plan-features">
+                                        <li>512MB RAM</li>
+                                        <li>2 Bots</li>
+                                        <li>Basic Support</li>
+                                    </ul>
+                                    <span class="plan-best-for">Best for: Small bots, testing</span>
+                                </div>
+                                <div class="plan-card featured">
+                                    <h3 class="plan-name">Pro</h3>
+                                    <div class="plan-price">$0.35/month</div>
+                                    <ul class="plan-features">
+                                        <li>1GB RAM</li>
+                                        <li>5 Bots</li>
+                                        <li>Priority Support</li>
+                                    </ul>
+                                    <span class="plan-best-for">Best for: Growing communities</span>
+                                </div>
+                                <div class="plan-card">
+                                    <h3 class="plan-name">Ultimate</h3>
+                                    <div class="plan-price">$0.67/month</div>
+                                    <ul class="plan-features">
+                                        <li>2GB RAM</li>
+                                        <li>Unlimited Bots</li>
+                                        <li>Premium Support</li>
+                                    </ul>
+                                    <span class="plan-best-for">Best for: Large servers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="guide-step">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <h2 class="step-title">Deploy Your Bot</h2>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                Upload your bot files and configure the hosting environment.
+                            </p>
+                            <div class="deployment-methods">
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </div>
+                                    <h3 class="method-title">File Upload</h3>
+                                    <p class="method-description">
+                                        Zip your bot files and upload them directly through our panel.
+                                    </p>
+                                </div>
+                                <div class="method-card">
+                                    <div class="method-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <h3 class="method-title">GitHub Integration</h3>
+                                    <p class="method-description">
+                                        Connect your GitHub repository for automatic deployments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="guide-step">
+                        <div class="step-header">
+                            <div class="step-number">5</div>
+                            <h2 class="step-title">Configure & Launch</h2>
+                        </div>
+                        <div class="step-content">
+                            <p class="step-description">
+                                Set up environment variables and start your bot.
+                            </p>
+                            <div class="step-instructions">
+                                <ol class="instruction-list">
+                                    <li>Add your Discord bot token as an environment variable</li>
+                                    <li>Configure any other required environment variables</li>
+                                    <li>Set the startup command (usually <code>node index.js</code>)</li>
+                                    <li>Click "Start Bot" to launch your bot</li>
+                                    <li>Monitor logs to ensure everything is working correctly</li>
+                                </ol>
+                            </div>
+                            <div class="step-success">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Congratulations! Your bot is now online and ready to serve your Discord community.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide Sidebar -->
+                <div class="guide-sidebar">
+                    <div class="guide-nav">
+                        <h3 class="guide-nav-title">Quick Navigation</h3>
+                        <ul class="guide-nav-list">
+                            <li><a href="#step-1" class="guide-nav-link">Create Discord Bot</a></li>
+                            <li><a href="#step-2" class="guide-nav-link">Prepare Code</a></li>
+                            <li><a href="#step-3" class="guide-nav-link">Choose Plan</a></li>
+                            <li><a href="#step-4" class="guide-nav-link">Deploy Bot</a></li>
+                            <li><a href="#step-5" class="guide-nav-link">Configure & Launch</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-help">
+                        <h3 class="guide-help-title">Need Help?</h3>
+                        <p class="guide-help-description">
+                            Our support team is here to assist you every step of the way.
+                        </p>
+                        <div class="guide-help-links">
+                            <a href="contact.html" class="help-link">
+                                <i class="fas fa-envelope"></i>
+                                Contact Support
+                            </a>
+                            <a href="documentation.html" class="help-link">
+                                <i class="fas fa-book"></i>
+                                Documentation
+                            </a>
+                            <a href="#" class="help-link">
+                                <i class="fab fa-discord"></i>
+                                Join Discord
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="guide-tips">
+                        <h3 class="guide-tips-title">Pro Tips</h3>
+                        <div class="tip-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Use environment variables for all sensitive configuration</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Test your bot locally before deploying</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Monitor your bot's resource usage regularly</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Keep your dependencies up to date</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Deploy Your Bot?</h2>
+                <p class="cta-description">
+                    Start hosting your Discord bot today with our simple and affordable plans.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://discord.gg/Vd48FAZCGV" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Get Started
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-question-circle"></i>
+                        Get Help
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VisiHost</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium Discord bot hosting with unmatched performance and reliability.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="status.html">Status</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VisiHost. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/Vd48FAZCGV" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

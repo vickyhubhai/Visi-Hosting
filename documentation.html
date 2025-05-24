@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - VisiHost</title>
+    <meta name="description" content="Complete documentation for VisiHost Discord bot hosting platform. Learn how to deploy, manage, and scale your bots.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">VisiHost</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="documentation.html" class="nav-link active">Docs</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Header -->
+    <section class="docs-header">
+        <div class="container">
+            <div class="docs-header-content">
+                <h1 class="docs-title">
+                    <span class="gradient-text">Documentation</span>
+                </h1>
+                <p class="docs-description">
+                    Everything you need to know about deploying and managing Discord bots on VisiHost.
+                </p>
+                <div class="docs-search">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search documentation..." class="search-input">
+                    </div>
+                </div>
+                <div class="docs-help">
+                    <p>Need help? Join our Discord community for real-time support:</p>
+                    <a href="https://discord.gg/Vd48FAZCGV" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Content -->
+    <section class="docs-content">
+        <div class="container">
+            <div class="docs-layout">
+                <!-- Sidebar -->
+                <aside class="docs-sidebar">
+                    <nav class="docs-nav">
+                        <div class="docs-nav-section">
+                            <h3 class="docs-nav-title">Getting Started</h3>
+                            <ul class="docs-nav-list">
+                                <li><a href="#quick-start" class="docs-nav-link active">Quick Start</a></li>
+                                <li><a href="#account-setup" class="docs-nav-link">Account Setup</a></li>
+                                <li><a href="#first-deployment" class="docs-nav-link">First Deployment</a></li>
+                            </ul>
+                        </div>
+                        <div class="docs-nav-section">
+                            <h3 class="docs-nav-title">Deployment</h3>
+                            <ul class="docs-nav-list">
+                                <li><a href="#git-deployment" class="docs-nav-link">Git Deployment</a></li>
+                                <li><a href="#file-upload" class="docs-nav-link">File Upload</a></li>
+                                <li><a href="#environment-variables" class="docs-nav-link">Environment Variables</a></li>
+                                <li><a href="#dependencies" class="docs-nav-link">Dependencies</a></li>
+                            </ul>
+                        </div>
+                        <div class="docs-nav-section">
+                            <h3 class="docs-nav-title">Management</h3>
+                            <ul class="docs-nav-list">
+                                <li><a href="#dashboard" class="docs-nav-link">Dashboard</a></li>
+                                <li><a href="#logs" class="docs-nav-link">Logs & Monitoring</a></li>
+                                <li><a href="#scaling" class="docs-nav-link">Scaling</a></li>
+                                <li><a href="#backups" class="docs-nav-link">Backups</a></li>
+                            </ul>
+                        </div>
+                        <div class="docs-nav-section">
+                            <h3 class="docs-nav-title">API Reference</h3>
+                            <ul class="docs-nav-list">
+                                <li><a href="#authentication" class="docs-nav-link">Authentication</a></li>
+                                <li><a href="#endpoints" class="docs-nav-link">Endpoints</a></li>
+                                <li><a href="#webhooks" class="docs-nav-link">Webhooks</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="docs-main">
+                    <article class="docs-article">
+                        <!-- Quick Start -->
+                        <section id="quick-start" class="docs-section">
+                            <h2 class="docs-section-title">Quick Start</h2>
+                            <p class="docs-text">
+                                Get your Discord bot up and running on VisiHost in just a few minutes. This guide will walk you through the essential steps to deploy your first bot.
+                            </p>
+
+                            <div class="docs-steps">
+                                <div class="docs-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Create Account</h3>
+                                        <p class="step-description">Sign up for a VisiHost account and verify your email address.</p>
+                                    </div>
+                                </div>
+                                <div class="docs-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Upload Bot</h3>
+                                        <p class="step-description">Upload your bot files or connect your Git repository.</p>
+                                    </div>
+                                </div>
+                                <div class="docs-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3 class="step-title">Configure & Deploy</h3>
+                                        <p class="step-description">Set environment variables and deploy your bot with one click.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Account Setup -->
+                        <section id="account-setup" class="docs-section">
+                            <h2 class="docs-section-title">Account Setup</h2>
+                            <p class="docs-text">
+                                Setting up your VisiHost account is straightforward. Follow these steps to get started:
+                            </p>
+
+                            <div class="docs-code-block">
+                                <div class="code-header">
+                                    <span class="code-title">Registration Process</span>
+                                    <button class="code-copy" onclick="copyCode(this)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code class="language-bash">
+# 1. Visit https://visihost.com/register
+# 2. Fill in your details
+# 3. Verify your email
+# 4. Choose your plan
+# 5. Add payment method (if required)
+                                </code></pre>
+                            </div>
+
+                            <div class="docs-note">
+                                <div class="note-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <div class="note-content">
+                                    <strong>Pro Tip:</strong> Enable two-factor authentication for enhanced security of your account.
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- First Deployment -->
+                        <section id="first-deployment" class="docs-section">
+                            <h2 class="docs-section-title">First Deployment</h2>
+                            <p class="docs-text">
+                                Deploy your first Discord bot using our simple deployment process:
+                            </p>
+
+                            <h3 class="docs-subsection-title">Prerequisites</h3>
+                            <ul class="docs-list">
+                                <li>A Discord bot token from the Discord Developer Portal</li>
+                                <li>Your bot's source code (Node.js, Python, or other supported languages)</li>
+                                <li>A VisiHost account with an active plan</li>
+                            </ul>
+
+                            <h3 class="docs-subsection-title">Deployment Steps</h3>
+                            <div class="docs-code-block">
+                                <div class="code-header">
+                                    <span class="code-title">Example Bot Structure</span>
+                                    <button class="code-copy" onclick="copyCode(this)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code class="language-javascript">
+// index.js
+const { Client, GatewayIntentBits } = require('discord.js');
+
+const client = new Client({
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]
+});
+
+client.once('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('messageCreate', message => {
+    if (message.content === '!ping') {
+        message.reply('Pong!');
+    }
+});
+
+client.login(process.env.DISCORD_TOKEN);
+                                </code></pre>
+                            </div>
+                        </section>
+
+                        <!-- Git Deployment -->
+                        <section id="git-deployment" class="docs-section">
+                            <h2 class="docs-section-title">Git Deployment</h2>
+                            <p class="docs-text">
+                                Deploy directly from your Git repository for seamless continuous deployment:
+                            </p>
+
+                            <div class="docs-code-block">
+                                <div class="code-header">
+                                    <span class="code-title">Git Integration</span>
+                                    <button class="code-copy" onclick="copyCode(this)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code class="language-bash">
+# 1. Connect your GitHub/GitLab repository
+git remote add visihost https://git.visihost.com/your-username/bot-name.git
+
+# 2. Push your code
+git push visihost main
+
+# 3. Auto-deployment will trigger
+# Your bot will be automatically deployed and started
+                                </code></pre>
+                            </div>
+
+                            <div class="docs-warning">
+                                <div class="note-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="note-content">
+                                    <strong>Important:</strong> Make sure your repository includes a package.json (Node.js) or requirements.txt (Python) file for dependency management.
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Environment Variables -->
+                        <section id="environment-variables" class="docs-section">
+                            <h2 class="docs-section-title">Environment Variables</h2>
+                            <p class="docs-text">
+                                Securely manage your bot's configuration using environment variables:
+                            </p>
+
+                            <div class="docs-code-block">
+                                <div class="code-header">
+                                    <span class="code-title">Setting Environment Variables</span>
+                                    <button class="code-copy" onclick="copyCode(this)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code class="language-bash">
+# Via Dashboard
+DISCORD_TOKEN=your_bot_token_here
+DATABASE_URL=postgresql://user:pass@host:port/db
+API_KEY=your_api_key
+
+# Via CLI
+visihost env:set DISCORD_TOKEN=your_token
+visihost env:set DATABASE_URL=postgresql://...
+                                </code></pre>
+                            </div>
+                        </section>
+
+                        <!-- Dashboard -->
+                        <section id="dashboard" class="docs-section">
+                            <h2 class="docs-section-title">Dashboard</h2>
+                            <p class="docs-text">
+                                Monitor and manage your bots through our intuitive dashboard:
+                            </p>
+
+                            <div class="docs-feature-grid">
+                                <div class="docs-feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3 class="feature-title">Real-time Metrics</h3>
+                                    <p class="feature-description">Monitor CPU, memory, and network usage in real-time.</p>
+                                </div>
+                                <div class="docs-feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-terminal"></i>
+                                    </div>
+                                    <h3 class="feature-title">Live Logs</h3>
+                                    <p class="feature-description">View and search through your bot's logs instantly.</p>
+                                </div>
+                                <div class="docs-feature">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <h3 class="feature-title">Configuration</h3>
+                                    <p class="feature-description">Manage environment variables and settings easily.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- API Reference -->
+                        <section id="authentication" class="docs-section">
+                            <h2 class="docs-section-title">API Authentication</h2>
+                            <p class="docs-text">
+                                Authenticate with the VisiHost API using your API key:
+                            </p>
+
+                            <div class="docs-code-block">
+                                <div class="code-header">
+                                    <span class="code-title">API Authentication</span>
+                                    <button class="code-copy" onclick="copyCode(this)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code class="language-bash">
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     https://api.visihost.com/v1/bots
+                                </code></pre>
+                            </div>
+                        </section>
+                    </article>
+
+                    <!-- Table of Contents -->
+                    <aside class="docs-toc">
+                        <h3 class="toc-title">On this page</h3>
+                        <ul class="toc-list">
+                            <li><a href="#quick-start" class="toc-link">Quick Start</a></li>
+                            <li><a href="#account-setup" class="toc-link">Account Setup</a></li>
+                            <li><a href="#first-deployment" class="toc-link">First Deployment</a></li>
+                            <li><a href="#git-deployment" class="toc-link">Git Deployment</a></li>
+                            <li><a href="#environment-variables" class="toc-link">Environment Variables</a></li>
+                            <li><a href="#dashboard" class="toc-link">Dashboard</a></li>
+                            <li><a href="#authentication" class="toc-link">API Authentication</a></li>
+                        </ul>
+                    </aside>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VisiHost</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium Discord bot hosting with unmatched performance and reliability.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="api.html">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="status.html">Status</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VisiHost. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/Vd48FAZCGV" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+    <script src="docs.js"></script>
+</body>
+</html>

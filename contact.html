@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - VisiHost</title>
+    <meta name="description" content="Get in touch with VisiHost. Contact our support team for Discord bot hosting questions, technical support, or sales inquiries.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">VisiHost</span>
+                    <span class="logo-accent">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="guide.html" class="nav-link">Guide</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">
+                    Get in <span class="gradient-text">Touch</span>
+                </h1>
+                <p class="page-description">
+                    Have questions about our Discord bot hosting? We're here to help you get started.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="contact-form-header">
+                        <h2 class="contact-form-title">Send us a Message</h2>
+                        <p class="contact-form-description">
+                            Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
+                    </div>
+
+                    <form class="contact-form-large" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-input" name="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-input" name="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <select class="form-input" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Billing Question">Billing Question</option>
+                                <option value="Sales Inquiry">Sales Inquiry</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Plan Interest</label>
+                            <select class="form-input" name="planInterest">
+                                <option value="">Select a plan (optional)</option>
+                                <option value="Standard - $0.23/month">Standard - $0.23/month</option>
+                                <option value="Pro - $0.35/month">Pro - $0.35/month</option>
+                                <option value="Ultimate - $0.67/month">Ultimate - $0.67/month</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-input" name="message" placeholder="Tell us about your project or question..." rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-secondary btn-full" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="btn-text">Send Message</span>
+                            </button>
+                            <a href="https://discord.gg/Vd48FAZCGV" class="btn btn-primary btn-full" target="_blank">
+                                <i class="fab fa-discord"></i>
+                                Join Discord for Instant Help
+                            </a>
+                        </div>
+
+                        <!-- Success/Error Messages -->
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <p class="contact-info-description">
+                            Reach out to us through any of these channels. We're here to help!
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-method-title">Email</h4>
+                                    <p class="contact-method-info">support@visihost.com</p>
+                                    <span class="contact-method-note">We reply within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-discord"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-method-title">Discord</h4>
+                                    <p class="contact-method-info"><a href="https://discord.gg/Vd48FAZCGV" target="_blank" style="color: inherit; text-decoration: none;">Join our server</a></p>
+                                    <span class="contact-method-note">Live chat support</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-method-title">Support Hours</h4>
+                                    <p class="contact-method-info">24/7 Available</p>
+                                    <span class="contact-method-note">Round-the-clock assistance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="quick-links-card">
+                        <h3 class="quick-links-title">Quick Links</h3>
+                        <div class="quick-links-grid">
+                            <a href="guide.html" class="quick-link">
+                                <i class="fas fa-book"></i>
+                                <span>Getting Started Guide</span>
+                            </a>
+                            <a href="documentation.html" class="quick-link">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Documentation</span>
+                            </a>
+                            <a href="status.html" class="quick-link">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Service Status</span>
+                            </a>
+                            <a href="help.html" class="quick-link">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help Center</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+                <p class="section-description">
+                    Find quick answers to frequently asked questions before reaching out.
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        How quickly can I get my bot online?
+                    </h3>
+                    <p class="faq-answer">
+                        Most bots can be deployed and online within 5-10 minutes after signup. Our streamlined
+                        process makes it incredibly fast to get started.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        Do you provide bot development services?
+                    </h3>
+                    <p class="faq-answer">
+                        While we focus on hosting, our Ultimate plan includes Discord bot setup help. We can
+                        also recommend trusted developers in our community.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        What programming languages do you support?
+                    </h3>
+                    <p class="faq-answer">
+                        We support all major languages including Node.js, Python, Java, C#, Go, and more.
+                        If you have specific requirements, contact us!
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        Can I migrate from another hosting provider?
+                    </h3>
+                    <p class="faq-answer">
+                        Absolutely! We offer free migration assistance to help you move your bots from other
+                        hosting providers with zero downtime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VisiHost</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium Discord bot hosting with unmatched performance and reliability.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="help.html">Help Center</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="status.html">Status</a></li>
+                            <li><a href="community.html">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VisiHost. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/Vd48FAZCGV" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact-form.js"></script>
+</body>
+</html>
