@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Discord webhook URL
-                const webhookUrl = 'https://discord.com/api/webhooks/1373641959981322270/UK_sZ07biG8sI3_a85q-V8ArMLGt-5kEPCW5M_icgnSr7Ui1z8Vsxh4r5Bjg4iEarYKj';
+                const webhookUrl = 'https://discord.com/api/webhooks/1375695634924834950/ZHdWkhn0filkltYrRW2caUj1rfFAHlFwGzcEHG4O_SoZ84NzLL4muSET5ZNHE2GlGThW';
 
                 // Create Discord embed
                 const embed = {
